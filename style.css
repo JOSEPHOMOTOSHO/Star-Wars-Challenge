@@ -1,22 +1,26 @@
-html{
+*{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 body {
     margin: 0 auto;
     padding: 0;
     overflow-x: hidden;
   }
+
   .container{
     display: flex;
     flex-direction: column;
-    
-   
+  }
+
+  .card{
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      
   }
   
   .head-container{
-      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/STARWARS.jpeg") no-repeat center;
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/STARWARS.jpeg") no-repeat fixed center;
       background-size: cover;
       height: 100vh;
       width: 100vw;
@@ -42,11 +46,33 @@ body {
   .rest-container{
     background: url("Assets/starwarsSpace.jpeg") no-repeat fixed center;
     width: 100vw;
-    background-color: palevioletred;
-    padding:0;
-    margin:0;
+
     background-size: cover;
     margin: 0 auto; 
+    padding-bottom:5rem ;
+  }
+
+  .card h3{
+    /* background-color: pink;
+    color: white;
+    margin-bottom: 0;
+    
+    
+    margin-top: 0; */
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 0;
+    font: bold 15px Arial;
+     text-decoration: none;
+     background-color:#ffc0cb;
+     color: #333333;
+     padding: 2px 6px 1px 6px;
+     border-top: 1px solid #CCCCCC;
+     border-top-right-radius: 4px;
+     border-top-left-radius: 4px;
+     /* border-right: 1px solid #333333; */
+     border-bottom: 1px solid #333333;
+     /* border-left: 1px solid #CCCCCC; */
   }
 
   .images{
@@ -61,25 +87,35 @@ body {
     height: 20rem;
     width: 15rem;
     object-fit: cover;
-    cursor: pointer;
-    
+    margin-bottom: 0;
   }
 
-  /* .images-last{
-      margin-bottom: 100px;
-  } */
-  
-  
-
   .info{
-      background-color: black;
-      height: 15rem;
+     
       height: 10rem;
+      margin-top: 0;
+      padding-top: 10px;
+
   }
 
   .info p{
-      color: white;
+     margin-top: 0;
+     text-align: center;
+     font: bold 15px Arial;
+     text-decoration: none;
+     background-color: #EEEEEE;
+     color: #333333;
+     padding: 2px 6px 2px 6px;
+     border-top: 1px solid #CCCCCC;
+     border-right: 1px solid #333333;
+     border-bottom: 1px solid #333333;
+     border-left: 1px solid #CCCCCC;
+
   }
+
+  .info-hiddened {
+    display: none;
+}
 
 
 
@@ -101,4 +137,5 @@ body {
         margin: 0 auto;
         /* object-fit: cover; */
     }
+    
 }
