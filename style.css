@@ -75,7 +75,7 @@ body {
      /* border-left: 1px solid #CCCCCC; */
   }
 
-  .images{
+  .card-group{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -83,7 +83,7 @@ body {
     margin-top: 5rem;
   }
 
-  .images img{
+  .card-group img{
     height: 20rem;
     width: 15rem;
     object-fit: cover;
@@ -131,7 +131,7 @@ body {
     .card1,.image2,.image3 {
         width: 90%;
     }
-    .images img{
+    .card-group img{
         height: 25rem;
         width: 90%;
         margin: 0 auto;
