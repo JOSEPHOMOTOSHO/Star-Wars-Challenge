@@ -30,9 +30,9 @@ fetch(starWarsUrl).then(res => res.json()).then(data => {
         let h3 = document.createElement("h3")
         card.appendChild(h3)
         card.innerHTML = `
-        <h3 id = "head">${name}</h3>
+        <h3 class = "head" id="head${index}">${name}</h3>
         <img src=${arrOfImages[index]}></img>
-        <div class="info " id="info-${index}">
+        <div class="info info-hiddened" id="info-${index}">
              <p>Name:${name}</p>
             <p>Height:${height}</p>
             <p>Gender:${gender}</p>
@@ -40,7 +40,17 @@ fetch(starWarsUrl).then(res => res.json()).then(data => {
         `
         
     })
-    
+    let head = document.querySelectorAll(".card .head")
+    let arrHead = [...head]
+    arrHead.forEach((h3,index) => {
+        let correspondingInfo = document.querySelector(`#info-${index}`); 
+   
+        h3.addEventListener('click', (e) => {
+            correspondingInfo.classList.toggle('info-hiddened')
+            setTimeout( ()=> correspondingInfo.classList.toggle("info-hiddened"), 3000)
+        })
+    })
+
 })
 
 
