@@ -11,14 +11,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-
-  .card{
-      min-height: 520px;
-      display: flex;
-      flex-direction: column;
-      
-  }
-  
+ 
   .head-container{
       background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/STARWARS.jpeg") no-repeat fixed center;
       background-size: cover;
@@ -52,13 +45,21 @@ body {
     padding-bottom:5rem ;
   }
 
+  .card{
+    min-height: 517px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2px 10px;
+    /* border: solid 2px blue; */
+    overflow-x: hidden;   
+    flex: 1;   
+    max-width: 350px;
+}
+
   .card h3{
-    /* background-color: pink;
-    color: white;
-    margin-bottom: 0;
-    
-    
-    margin-top: 0; */
+   
     text-align: center;
     cursor: pointer;
     margin-bottom: 0;
@@ -74,21 +75,33 @@ body {
      border-bottom: 1px solid #333333;
      /* border-left: 1px solid #CCCCCC; */
   }
+  .card img{
+    
+    height: 20rem;
+    width: 20rem;
+    border: solid 2px red;
+    margin-bottom: 0;
+    min-width: 350px;
+  }
+  
 
   .card-group{
+    object-fit: cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 5rem;
+
   }
 
-  .card-group img{
-    height: 20rem;
-    width: 15rem;
-    object-fit: cover;
-    margin-bottom: 0;
-  }
+
+  
+
+  /* .card-group img{
+    
+    
+  } */
 
   .info{
      
