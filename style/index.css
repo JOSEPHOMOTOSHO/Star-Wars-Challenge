@@ -1,0 +1,150 @@
+*, body, html{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .head-container{
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/week-1-node-008-JOSEPHOMOTOSHO/Assets/STARWARS.jpeg") no-repeat fixed center;
+      background-size: cover;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;     
+  }
+
+  .head-logo{
+      height: 35rem;
+      width: 45rem;
+      position: relative;
+      top: -5rem;
+  }
+
+  .mid-logo{
+    height: 20rem;
+    width: 20rem;
+    transform: translateY(-40%);
+  }
+
+  .rest-container{
+    background: url("/week-1-node-008-JOSEPHOMOTOSHO/Assets/starwarsSpace.jpeg") no-repeat fixed center;
+    width: 100vw;
+
+    background-size: cover;
+    margin: 0 auto; 
+    padding-bottom:5rem ;
+  }
+
+  .card{
+    min-height: 517px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2px 10px;
+    /* border: solid 2px blue; */
+    overflow-x: hidden;   
+    flex: 1;   
+    max-width: 350px;
+}
+
+  .card h3{
+   
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 0;
+    font: bold 15px Arial;
+     text-decoration: none;
+     background-color:#ffc0cb;
+     color: #333333;
+     padding: 2px 6px 1px 6px;
+     border-top: 1px solid #CCCCCC;
+     border-top-right-radius: 4px;
+     border-top-left-radius: 4px;
+     /* border-right: 1px solid #333333; */
+     border-bottom: 1px solid #333333;
+     /* border-left: 1px solid #CCCCCC; */
+  }
+  .card img{
+    
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: 0;
+    min-width: 350px;
+  }
+  
+
+  .card-group{
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+
+  }
+
+
+  
+
+  /* .card-group img{
+    
+    
+  } */
+
+  .info{
+     
+      height: 10rem;
+      margin-top: 0;
+      padding-top: 10px;
+
+  }
+
+  .info p{
+     margin-top: 0;
+     text-align: center;
+     font: bold 15px Arial;
+     text-decoration: none;
+     background-color: #EEEEEE;
+     color: #333333;
+     padding: 2px 6px 2px 6px;
+     border-top: 1px solid #CCCCCC;
+     border-right: 1px solid #333333;
+     border-bottom: 1px solid #333333;
+     border-left: 1px solid #CCCCCC;
+
+  }
+
+  .info-hiddened {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .head-logo{
+        height: 15rem;
+        width: 25rem;
+        margin: 0 auto;
+        position: absolute;
+        top: -3rem;
+    }
+    .card1,.image2,.image3 {
+        width: 90%;
+    }
+    .card-group img{
+        height: 25rem;
+        width: 90%;
+        margin: 0 auto;
+        /* object-fit: cover; */
+    }
+    
+}
