@@ -35,6 +35,7 @@
 
   .rest-container{
     background: url("/Assets/starwarsSpace.jpeg") no-repeat fixed center;
+    
     min-width: 100vw;
     background-size: cover;
     margin: 0 auto; 
