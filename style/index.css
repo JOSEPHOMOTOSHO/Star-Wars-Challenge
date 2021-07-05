@@ -10,7 +10,7 @@
   }
  
   .head-container{
-      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Assets/STARWARS.jpeg") no-repeat fixed center;
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/STARWARS.jpeg") no-repeat fixed center;
       background-size: cover;
       min-height: 100vh;
       min-width: 100vw;
