@@ -1,3 +1,7 @@
+Link to my Site: https://josephomotosho.github.io/Star-Wars-Challenge/
+
+click on name to see details of character
+
 # Week-One-SQ008
 
 ## Problem Description:
